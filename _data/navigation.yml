@@ -2,10 +2,24 @@
 main:
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  #- title: "About"
+  #  url: https://yeopeva.notion.site/Anti-root-e679034ab169454895b8c53cb9782ca4
+  
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
+    url: /about/
+  - title: "Activity"
+    url:/categories/Activity/
+  - title: "Research"
+    url: /categories/Research/
+  - title: "CTF"
+    url: /categories/CTF/
+  - title: "Beer-CAT"
+    url: /categories/Beer/
+  - title: "Tags"
+    url: /tags/
+  - title: "Categories"
+    url: /categories/
+
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
