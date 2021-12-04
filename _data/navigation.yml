@@ -8,7 +8,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Activity"
-    url:/categories/Activity/
+    url: /categories/Activity/
   - title: "Research"
     url: /categories/Research/
   - title: "CTF"
