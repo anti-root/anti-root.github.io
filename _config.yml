@@ -102,9 +102,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Anti-root"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Root For Someone"
+  name             : "Root For Someone"
+  avatar           : "assets/images/logo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Anti-root는 정보보안 연구 단체로써, 정보보안과 관련된 다양한 활동, 경험, 자료를 제공하기 위해 노력하고 있습니다."
   location         : "South Korea"
   email            :
   links:
