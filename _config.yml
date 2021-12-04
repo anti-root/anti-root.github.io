@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "Ko-KR"
 title                    : "Anti-root"
-title_separator          : "Root For Someone"
+title_separator          : ""
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Anti-root"
-description              : "Root For Someone"
+description              : ""
 url                      : "https://anti-root.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/anti-root/anti-root.github.io"
