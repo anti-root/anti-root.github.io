@@ -6,4 +6,4 @@ author_profile: true
 taxonomy: Research
 ---
 
-최근에 했던 연구들에 대한 글들을 모아두었습니다.
+Anti-root 멤버들이 진행한 다양한 연구들을 공개하는 공간입니다.

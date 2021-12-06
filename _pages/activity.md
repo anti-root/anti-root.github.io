@@ -6,4 +6,4 @@ author_profile: true
 taxonomy: Activity
 ---
 
-최근에 했던 활동들에 대한 글들을 모아두었습니다.
+Anti-root의 최근 활동들에 대해 모아두었습니다.

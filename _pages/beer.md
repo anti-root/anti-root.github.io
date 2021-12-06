@@ -6,4 +6,4 @@ author_profile: true
 taxonomy: Beer-CAT
 ---
 
-최근에 했던 활동들에 대한 글들을 모아두었습니다.
+Beer-CAT의 연구 및 프로젝트 내용들을 올리는 공간입니다.
