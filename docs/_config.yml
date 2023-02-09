@@ -1,330 +1,299 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
+# This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# ,--------.      ,--.   ,--. ,--.
+# '--.  .--',---.  \  `.'  /,-'  '-.
+#    |  |  | .-. :  .'    \ '-.  .-'
+#    |  |  \   --. /  .'.  \  |  |
+#    `--'   `----''--'   '--' `--'
 
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-# Site Settings
-locale                   : "en-US"
-title                    : "Minimal Mistakes"
-title_separator          : "-"
-subtitle                 : "A Jekyll theme"
-name                     : &name "Michael Rose" # &name is a YAML anchor which can be *referenced later
-description              : &description "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
-repository               : "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-reCaptcha:
-  siteKey                : # "6LdRBykTAAAAAFB46MnIu6ixuxwu9W1ihFF8G60Q"
-  secret                 : # "PznnZGu3P6eTHRPLORniSq+J61YEf+A9zmColXDM5icqF49gbunH51B8+h+i2IvewpuxtA9TFoK68TuhUp/X3YKmmqhXasegHYabY50fqF9nJh9npWNhvITdkQHeaOqnFXUIwxfiEeUt49Yoa2waRR7a5LdRAP3SVM8hz0KIBT4="
-
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
-search_provider          : algolia # lunr (default), algolia
-algolia:
-  application_id         : QB6HVGBSBA # YOUR_APPLICATION_ID
-  index_name             : minimal_mistakes # YOUR_INDEX_NAME
-  search_only_api_key    : 9d5014e5bbc77372547bce778dfa5663 # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : true # true (default), false
-  files_to_exclude:
-    - _posts/2017-11-28-post-exclude-search.md
-
-# SEO Related
-google_site_verification : "UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y" # Replace this with your ID, or delete
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
-
-# Social Sharing
-twitter:
-  username               : &twitter "mmistakes"
-facebook:
-  username               : &facebook "michaelrose"
-  app_id                 :
-  publisher              :
-og_image                 : "/assets/images/site-logo.png" # Open Graph/Twitter default site image
-# For specifying social profiles, used in _includes/seo.html
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-    - "https://twitter.com/mmistakes"
-    - "https://www.facebook.com/michaelrose"
-
-# Analytics
-analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "UA-2011187-3" # Replace this with your ID, or delete
-    anonymize_ip         : true
+# config file for demo site, DELETE IT IF YOU WANT.
 
 
-# Site Author
+## => Site Settings
+##############################
+text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+url     : https://kitian616.github.io
+baseurl : /jekyll-TeXt-theme
+title   : TeXt Theme
+description: >
+  A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
+
+
+## => Language and Timezone
+##############################
+lang: en # the language of your site, default as "en"
+timezone: Asia/Shanghai
+
+
+## => Author and Social
+##############################
 author:
-  name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "/assets/images/michael-rose.jpg"
-  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
-  location         : "Buffalo, NY"
-  links:
-    - label: "Made Mistakes"
-      icon: "fas fa-fw fa-link"
-      url: "https://mademistakes.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+  type      : organization # "person" (default), "organization"
+  name      : TeXt
+  url       :
+  avatar    : /assets/apple-touch-icon.png
+  bio: >
+    TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
+    Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+  email     : kitian616@outlook.com
+  facebook  :
+  twitter   : kitian616
+  weibo     : 234695683
+  googleplus: 101827554735084402671
+  telegram  :
+  medium    :
+  zhihu     :
+  douban    :
+  linkedin  :
+  github    : kitian616/jekyll-TeXt-theme
+  npm       :
 
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/mmistakes"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/mmistakes"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/mmistakes"
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: kitian616/jekyll-TeXt-theme
+repository_tree: master
 
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : /test/ # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+  rss     : # "/feed.xml" (default)
+
+
+## => Post
+##############################
+## excerpt
+excerpt_separator: <!--more-->
+
+## license
+license: CC-BY-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+
+## TOC
+toc:
+  selectors: # "h1,h2,h3" (default)
+
+
+## => Markdown Enhancements
+##############################
+## Mathjax
+mathjax: true # false (default), true
+mathjax_autoNumber: true # false (default), true
+
+## Mermaid
+mermaid: true # false (default), true
+
+## Chart
+chart: true # false (default), true
+
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /test/page:num # don't change this unless for special need
+
+
+## => Sources
+##############################
+sources: # bootcdn (default), unpkg
+
+
+## => Sharing
+##############################
+sharing:
+  provider: addthis # false (default), "addtoany", "addthis", "custom"
+
+  ## AddThis
+  addthis:
+    id: ra-5be59ee2486770cb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+
+
+## => Comments
+##############################
+comments:
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  # provider: valine
+
+  ## Disqus
+  disqus:
+    shortname: # the Disqus shortname for the site
+
+  ## Gitalk
+  # please refer to https://github.com/gitalk/gitalk for more info.
+  gitalk:
+    clientID    : 143666b578a416f82175
+    clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775
+    repository  : gitalk-demo
+    owner       : kitian616
+    admin:
+      - kitian616
+
+  ## Valine
+  # please refer to https://valine.js.org/en/ for more info.
+  valine:
+    app_id      : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
+    app_key     : Mzf5m9skSwYVWVXhGiYMNyXs
+    placeholder : # Prompt information
+    visitor     : # false (default)
+    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+
+
+## => Pageview
+##############################
+pageview:
+  provider: leancloud # false (default), "leancloud", "custom"
+
+  ## Leancloud
+  leancloud:
+    app_id    : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
+    app_key   : Mzf5m9skSwYVWVXhGiYMNyXs
+    app_class : TeXtDemo
+
+
+## => Search
+##############################
+search:
+  provider: default # "default" (default), false, "google", "custom"
+
+  ## Google Custom Search Engine
+  google:
+    custom_search_engine_id: # Google Custom Search Engine ID
+
+
+## => Analytics
+##############################
+analytics:
+  provider: google # false (default), "google", "custom"
+
+  ## Google Analytics
+  google:
+    tracking_id : UA-71907556-1
+    anonymize_ip: false
+
+
+## => Build
+##############################
+markdown    : kramdown
+highlighter : rouge
+permalink   : date
+
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
   - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
+  - Gemfile.lock
   - LICENSE
-  - log
-  - node_modules
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
   - package.json
-  - Rakefile
-  - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  # - /docs
+  - /node_modules
+  # - /screenshots
+  # - /test
+  - /vendor
+  - /_posts
+  - /index.html
 
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Collections
+collections_dir: docs
 collections:
   docs:
     output: true
-    permalink: /:collection/:path/
-  recipes:
+  sample_page:
     output: true
-    permalink: /:collection/:path/
-  pets:
+  sample_articles:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
+  sample_languages:
     output: true
-    permalink: /:collection/:path/
 
-
-# Defaults
 defaults:
-  # _posts
+  ## home
+  - scope:
+      path: "test"
+    values:
+      articles:
+        excerpt_type: html
+  ## posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  # _docs
+      layout: article
+      sharing: true
+      license: true
+      category: post
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
+      # lightbox: true
+  ## samples
   - scope:
       path: ""
-      type: docs
+      type: sample_page
     values:
-      layout: single
-      read_time: false
-      author_profile: false
-      share: false
-      comments: false
+      nav_key: samples
+  - scope:
+      path: ""
+      type: sample_articles
+    values:
+      nav_key: samples
+      show_date: false
+  - scope:
+      path: ""
+      type: sample_languages
+    values:
+      layout: article
+      nav_key: samples
+      show_date: false
+  ## docs
+  - scope:
+      path: "_docs/en"
+    values:
+      layout: article
+      nav_key: docs
       sidebar:
-        nav: "docs"
-  # _recipes
+        nav: docs-en
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+      # lightbox: true
   - scope:
-      path: ""
-      type: recipes
+      path: "_docs/zh"
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _pets
-  - scope:
-      path: ""
-      type: pets
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs-zh
+      license: true
+      aside:
+        toc: true
+      lang: zh
+      show_edit_on_github: true
+      show_date: false
+      # lightbox: true
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
+## => Plugins
+##############################
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
   - jemoji
-  - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+data_dir: /docs/_data

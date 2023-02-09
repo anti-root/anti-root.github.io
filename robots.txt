@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://anti-root.github.io/sitemap.xml
