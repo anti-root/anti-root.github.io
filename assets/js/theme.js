@@ -1,83 +1,41 @@
-// Has to be in the head tag, otherwise a flicker effect will occur.
 
-let toggleTheme = (theme) => {
-  if (theme == "dark") {
-    setTheme("light");
-  } else {
-    setTheme("dark");
-  }
-}
+      (function ($) {"use strict";
+      
+      $(function () {
+        var header = $(".start-style");
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+    
+          if (scroll >= 10) {
+            header.removeClass('start-style').addClass("scroll-on");
+          } else {
+            header.removeClass("scroll-on").addClass('start-style');
+          }
+        });
+      });
+    
+      //Animation
+    
+      $(document).ready(function () {
+        $('body.hero-anime').removeClass('hero-anime');
+      });
+    
+      //Menu On Hover
+    
+      $('body').on('mouseenter mouseleave', '.nav-item', function (e) {
+        if ($(window).width() > 750) {
+          var _d = $(e.target).closest('.nav-item');_d.addClass('show');
+          setTimeout(function () {
+            _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+          }, 1);
+        }
+      });
+    
+    
+    
+    })(jQuery);
 
-
-let setTheme = (theme) =>  {
-  transTheme();
-  setHighlight(theme);
-  setGiscusTheme(theme);
-
-  if (theme) {
-    document.documentElement.setAttribute("data-theme", theme);
-  }
-  else {
-    document.documentElement.removeAttribute("data-theme");
-  }
-  localStorage.setItem("theme", theme);
-
-  // Updates the background of medium-zoom overlay.
-  if (typeof medium_zoom !== 'undefined') {
-    medium_zoom.update({
-      background: getComputedStyle(document.documentElement)
-          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
-    })
-  }
-};
-
-
-let setHighlight = (theme) => {
-  if (theme == "dark") {
-    document.getElementById("highlight_theme_light").media = "none";
-    document.getElementById("highlight_theme_dark").media = "";
-  } else {
-    document.getElementById("highlight_theme_dark").media = "none";
-    document.getElementById("highlight_theme_light").media = "";
-  }
-}
-
-
-let setGiscusTheme = (theme) => {
-
-  function sendMessage(message) {
-    const iframe = document.querySelector('iframe.giscus-frame');
-    if (!iframe) return;
-    iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
-
-  sendMessage({
-    setConfig: {
-      theme: theme
-    }
-  });
-
-}
-
-
-let transTheme = () => {
-  document.documentElement.classList.add("transition");
-  window.setTimeout(() => {
-    document.documentElement.classList.remove("transition");
-  }, 500)
-}
-
-
-let initTheme = (theme) => {
-  if (theme == null || theme == 'null') {
-    const userPref = window.matchMedia;
-    if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
-        theme = 'dark';
-    }
-  }
-
-  setTheme(theme);
-}
-
-
-initTheme(localStorage.getItem("theme"));
+// Blank Target External Links
+$(document.links).filter(function() {
+return this.hostname != window.location.hostname;
+}).attr('target', '_blank');
